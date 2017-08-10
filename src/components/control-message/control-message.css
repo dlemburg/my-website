@@ -1,0 +1,12 @@
+.control-message-container {
+    padding: 10px;
+    color: darkred;
+    border-left: 3px solid darkred;
+    border-radius: 5px;
+    background-color:  #ffcccc;
+    margin: 15px;
+}
+
+.control-message {
+    padding: 3px;
+}

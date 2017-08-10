@@ -1,0 +1,75 @@
+/*
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+*/
+
+* {
+    box-sizing: border-box;
+    padding: none;
+    margin: none;
+}
+
+.app-container {
+  transition: margin-left .5s;
+  margin-left: 0;
+  height: 100%;
+  border: 1px solid white;
+}
+
+.home-container {
+  color: white;
+  font-size: 16px;
+}
+
+.subtitle {
+  margin-top: 30px;
+  letter-spacing: 1.3px;
+  line-height: 2.2;
+  font-size: 14px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav-show {
+  width: 250px;
+}
+
+.sidenav div {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #387ef5;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav div a {
+  text-decoration: none;
+  color: #387ef5;
+}
+
+.sidenav div:hover, .sidenav div a:hover {
+  color: white;
+  cursor: pointer;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+

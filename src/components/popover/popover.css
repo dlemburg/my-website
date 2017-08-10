@@ -1,0 +1,65 @@
+/* The Modal (background) */
+.popover-overlay {  
+    position: absolute; /* Stay in place */
+    z-index: 9999 !important; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    padding-top: 50px;
+    color: black;
+    
+}
+
+.popover-container {
+    background-color: white;
+    margin: 5px auto;
+    border: 1px solid #888;
+    width: 80%;
+    max-height: 300px;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+.popover-title {
+    border-bottom: 1px solid lightgray;
+}
+
+.popover-body {
+    margin-bottom: 20px;
+}
+
+/* The Close Button */
+.popover-close-btn {
+    position: absolute;
+    right: 35px;
+    top: 10px; 
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.popover-close-btn:hover,
+.popover-close-btn:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation on entering popover */
+.animate-zoom {
+    -webkit-animation: animatezoom 0.9s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}

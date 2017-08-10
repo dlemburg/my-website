@@ -1,0 +1,85 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background-image: url("./img/computer2.png");
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  overflow: hidden;
+
+}
+
+#root {
+  position: relative;
+  height: 100%;
+}
+
+
+.red { border: 1px solid red;}
+.blue { border: 1px solid blue;}
+
+/* grid */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.width-50 { width: 50%; }
+.width-80 { width: 80%; }
+.width-100 { width: 100%;}
+
+.text-right { text-align: right;}
+.text-left { text-align: left;}
+.align-center { 
+  text-align: center;
+  margin: auto;
+}
+.no-padding { padding: none !important;}
+.margin-top { margin-top: 20px; }
+.margin-top-bottom { margin-top: 20px; margin-bottom: 20px; }
+
+.btn-blue {
+  background-color: #387ef5 !important;
+  color: white;
+  border: none;
+  min-width: 40px !important;
+}
+.btn-blue:hover {
+  background-color: white !important;
+  color: #387ef5 !important;
+  border: none !important;
+}
+
+.btn {
+    background: transparent;
+    padding: 10px;
+    min-width: 90px;
+    letter-spacing: 1.2px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #387ef5;
+    border: 2px solid #387ef5;
+}

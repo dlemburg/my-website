@@ -1,0 +1,18 @@
+.fixed-bottom-right {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /*
+  background-color: black;
+  opacity: .6;
+  */
+  color: white;
+  padding: 20px;
+}

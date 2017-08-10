@@ -1,0 +1,38 @@
+#toast {
+    min-width: 250px; /* Set a default minimum width */
+    background-color: #387ef5;
+    color: #fff; /* White text color */
+    text-align: left; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 22px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 9999; /* Add a z-index if needed */
+    width: 100%;
+    bottom: 0px; 
+    -webkit-animation: fadein 0.3s;
+    animation: fadein 0.3s;
+}
+
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: -30px; opacity: 0;} 
+    to {bottom: 0px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: -30px; opacity: 0;}
+    to {bottom: 0px; opacity: 1;}
+}
+
+/*
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+*/
