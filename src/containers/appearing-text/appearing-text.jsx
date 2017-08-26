@@ -14,7 +14,7 @@ class AppearingText extends Component {
             appearingTextInterval: setInterval(() => this.setTextInView(), 200),
             cursorInterval: setTimeout(() => setInterval(() => this.setState({cursor: !this.state.cursor}), 200), 100),
             cursor: true
-        }
+        };
     }
 
     setTextInView() {

@@ -7,7 +7,11 @@ class Header extends Component {
         return (
             <div className="header row">
                 <div className="col-6">
-                    <span className="menu-icon" onClick={this.props.handleOpenMenu}>&#9776;</span>
+                    <div className="menu-icon" onClick={this.props.handleOpenMenu}>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
                 <div className="col-6 text-right">{this.props.logo}</div>
             </div>

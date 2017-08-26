@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import './popover.css';
 
+// Popovers have forms
 class Popover extends Component {
     render(props) {
         console.log(this.props);

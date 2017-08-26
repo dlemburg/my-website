@@ -5,12 +5,6 @@
 }
 */
 
-* {
-    box-sizing: border-box;
-    padding: none;
-    margin: none;
-}
-
 .app-container {
   transition: margin-left .5s;
   margin-left: 0;

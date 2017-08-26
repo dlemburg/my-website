@@ -13,7 +13,8 @@ class ContactTemplate extends Component {
             email: "",
             message: "",
             formIsValid: true,
-            errMessages: []
+            errMessages: [],
+            isLoading: true
         };
     }
     handleSubmit() {
@@ -21,9 +22,7 @@ class ContactTemplate extends Component {
         const toData = {name, email, message};
         const doChecks = this.doChecks(toData);
         
-        // this would be if returning to make api in single place for all popovers. no need now
-        //this.props.onDismiss({name, email, message}, "contact");
-        console.log("doChecks.isValid: ", doChecks.isValid);
+
         if (doChecks.isValid) {
             API.stack(API.routes.contact, toData, "POST").then((response) => {
                 const shouldShowToast = true, toastMessage = "Thanks, I've received your contact message. I'll contact you soon!";
